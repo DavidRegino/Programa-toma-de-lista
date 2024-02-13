@@ -45,6 +45,8 @@ Route::group(['middleware' => ['admin', 'role:admin']], function() {
     //Ruta de ejemplo para obtener detalle de calificacion
     Route::get('alumno/materias', [AlumnoController::class, 'materias']);
     Route::get('generarQR', [AlumnoController::class, 'generaQR']);
+
+    Route::get('Prueba', [AlumnoController::class, 'Prueba']);
 });
 
 Route::group(['prefix' => 'alumno','middleware' => ['alumno', 'role:alumno']], function() {

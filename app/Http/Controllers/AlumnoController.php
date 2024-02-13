@@ -48,4 +48,7 @@ class AlumnoController extends Controller
         return QrCode::size(300)->generate('Aquí va La URL que se va a acceder');
     }
 
+    public function Prueba(){
+        return view('blankpage');
+    }
 }
