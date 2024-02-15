@@ -189,7 +189,7 @@
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-users""></i>
+                    <i class="nav-icon fas fa-users"></i>
                     <p>
                        Alumnos
                       <i class="fas fa-angle-left right"></i>
@@ -205,7 +205,13 @@
                     <li class="nav-item">
                       <a href="{{asset('/alumno/registrar')}}" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Registrar</p>
+                        <p>Registrara</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{{asset('/alumno/asistencia')}}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Asistencia</p>
                       </a>
                     </li>
                   </ul>

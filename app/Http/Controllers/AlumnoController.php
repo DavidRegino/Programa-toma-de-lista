@@ -14,6 +14,7 @@ class AlumnoController extends Controller
 
         return view('alumno.consultar', compact('alumnos'));
     }
+    
 
     public function registrar(){
         //consultas el alumno
@@ -50,5 +51,10 @@ class AlumnoController extends Controller
 
     public function Prueba(){
         return view('blankpage');
+    }
+    public function asistencia(){
+        $alumnos = Alumno::all();
+
+        return view('alumno.asistencia', compact('alumnos'));
     }
 }
