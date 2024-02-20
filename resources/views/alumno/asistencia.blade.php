@@ -10,31 +10,33 @@
 @stop
 
 @section('contenido')
-    <div class="responsive-table">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>N° lista</th>
-                    <th>Nombre</th>
-                    <th>Asistencia</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($alumnos as $a)
-                <tr>
-                    <td>{{ $a->id }}</td>
-                    <td>{{ $a->nombre }}</td>
-                    <td>
-                        <a href="" class="btn btn-danger btn-sm">
-                            <i class="fas fa-times"></i>
-                        </a>
-                        <a href="{{ url('reporte/pdf') }}/{{ $a->id }}" class="btn btn-success btn-sm">
-                            <i class="far fa-file-pdf"></i>
-                        </a>
-                    </td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
-    </div>
+    <form method="POST" action="{{ url('guardarAsistencia') }}">
+        @csrf
+        <div class="responsive-table">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>N° lista</th>
+                        <th>Nombre</th>
+                        <th>Inasistencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($alumnos as $a)
+                    <tr>
+                        <td>{{ $a->id }}</td>
+                        <td>{{ $a->nombre }}</td>
+                        <td>
+                            <input type="hidden" name="alumnos[{{ $a->id }}][id]" value="{{ $a->id }}">
+                            <label>
+                                <input type="checkbox" name="alumnos[]" value="{{ $a->id }}">
+                            </label>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
 @stop

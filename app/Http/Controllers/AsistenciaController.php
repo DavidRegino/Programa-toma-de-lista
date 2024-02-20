@@ -11,6 +11,12 @@ class AsistenciaController extends Controller
         $alumnos = Alumno::all();
 
         return view('alumno.asistencia', compact('alumnos'));
+
+    }
+
+    public function guardarAsistencia(Request $datos){
+        dd($datos->input());
+
     }
 }
 
