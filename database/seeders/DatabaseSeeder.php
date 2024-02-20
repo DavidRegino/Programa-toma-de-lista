@@ -9,6 +9,11 @@ use Database\Seeders\UserSeeder;
 use Database\Seeders\AlumnoSeeder;
 use Database\Seeders\MateriaSeeder;
 use Database\Seeders\MaestroSeeder;
+use Database\Seeders\GrupoSeeder;
+use Database\Seeders\AlumnoGrupoSeeder;
+use Database\Seeders\ClaseSeeder;
+use Database\Seeders\AsistenciaDetalleSeeder;
+use Database\Seeders\InasistenciaSeeder;
 use Database\Seeders\NoticiaSeeder;
 use Database\Seeders\AlumnoMateriaSeeder;
 
@@ -29,6 +34,10 @@ class DatabaseSeeder extends Seeder
         $this->call(MateriaSeeder::class);
         $this->call(AlumnoMateriaSeeder::class);
         $this->call(MaestroSeeder::class);
-
+        $this->call(GrupoSeeder::class);
+        $this->call(AlumnoGrupoSeeder::class);
+        $this->call(ClaseSeeder::class);
+        $this->call(AsistenciaDetalleSeeder::class);
+        $this->call(InasistenciaSeeder::class);
     }
 }

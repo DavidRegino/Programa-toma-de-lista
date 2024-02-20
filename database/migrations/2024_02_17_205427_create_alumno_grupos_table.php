@@ -16,13 +16,13 @@ return new class extends Migration
         Schema::create('alumno_grupos', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('alumno_id');
-            $table->unsignedBigInteger('materia_id');
+            $table->unsignedBigInteger('grupo_id');
             $table->timestamps();
 
             $table->softDeletes();
 
             $table->foreign('alumno_id')->references('id')->on('alumnos');
-            $table->foreign('materia_id')->references('id')->on('materias');
+            $table->foreign('grupo_id')->references('id')->on('grupos');
         });
     }
 
