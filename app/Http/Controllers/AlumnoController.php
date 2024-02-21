@@ -57,4 +57,9 @@ class AlumnoController extends Controller
 
         return view('alumno.asistencia', compact('alumnos'));
     }
+    public function guardar(){
+        $alumnos = Alumno::all();
+
+        return view('alumno.guardar', compact('alumnos'));
+    }
 }

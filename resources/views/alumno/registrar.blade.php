@@ -15,10 +15,7 @@
             <label for="">Nombre</label>
             <input type="text" class="form-control">
         </div>
-        <div class="form-group">
-            <label for="">Edad</label>
-            <input type="number" class="form-control">
-        </div>
+
         <div>
             <button type="submit" class="btn btn-primary">Guardar</button>
             <a href="{{ asset('/home') }}" class="btn btn-danger">Cancelar</a>

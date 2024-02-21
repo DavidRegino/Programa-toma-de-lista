@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Asistencia; // Asegúrate de importar el modelo de Asistencia
+use App\Models\Asistencia;
+use App\Models\Alumno;
+ // Asegúrate de importar el modelo de Asistencia
 
 class AsistenciaController extends Controller
 {
@@ -15,7 +17,11 @@ class AsistenciaController extends Controller
     }
 
     public function guardarAsistencia(Request $datos){
-        dd($datos->input());
+        $alumnos = Alumno::all();
+        $datos = $datos->input('alumnos');
+        
+
+        return view('alumno.guardar', compact('alumnos'));
 
     }
 }

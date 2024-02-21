@@ -16,7 +16,6 @@
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
-                    <th>Edad</th>
                     <th>Sexo</th>
                     <th>Opciones</th>
                 </tr>
@@ -26,7 +25,6 @@
                 <tr>
                     <td>{{ $a->id }}</td>
                     <td>{{ $a->nombre }}</td>
-                    <td>{{ $a->edad }}</td>
                     <td>
                         @if ($a->sexo == 0)
                             Femenino

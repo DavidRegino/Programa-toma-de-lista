@@ -28,8 +28,9 @@
                         <td>{{ $a->nombre }}</td>
                         <td>
                             <input type="hidden" name="alumnos[{{ $a->id }}][id]" value="{{ $a->id }}">
+                            <input type="hidden" name="alumnos[{{ $a->id }}][asistencia]" value="presente">
                             <label>
-                                <input type="checkbox" name="alumnos[]" value="{{ $a->id }}">
+                                <input type="checkbox" name="alumnos[{{ $a->id }}][asistencia]" value="inasistencia">
                             </label>
                         </td>
                     </tr>
