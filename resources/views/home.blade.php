@@ -1,15 +1,14 @@
 @extends('app')
 
 @section('home')
-    <h5 class="mb-2">Información</h5>
+    <h5 class="mb-2">Grupos Cetis 107</h5>
     <div class="row">
         <div class="col-md-3 col-sm-6 col-12">
             <div class="info-box">
             <span class="info-box-icon bg-info"><i class="fa fa-users"></i></span>
 
             <div class="info-box-content">
-                <span class="info-box-text">Clientes</span>
-                <span class="info-box-number">9</span>
+                <span class="info-box-text">2AVP</span>
             </div>
             <!-- /.info-box-content -->
             </div>
@@ -17,15 +16,20 @@
         </div>
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-12">
-            <div class="info-box">
-            <span class="info-box-icon bg-success"><i class="fas fa-tools"></i></span>
-
+          <div class="info-box">
+            <span class="info-box-icon bg-success"><i class="fa fa-users"></i></span>
+        
             <div class="info-box-content">
-                <span class="info-box-text">Servicios</span>
-                <span class="info-box-number">8</span>
+                <span class="info-box-text">2AVO</span>
+                
             </div>
             <!-- /.info-box-content -->
+        
+            <div class="info-box-buttons">
+                <button type="button" class="btn btn-primary btn-sm"><a href="{{asset('/alumno/asistencia')}}" class="text-light" value="1">Pase De Lista</a></button>
             </div>
+        </div>
+        
             <!-- /.info-box -->
         </div>
         <!-- /.col -->
