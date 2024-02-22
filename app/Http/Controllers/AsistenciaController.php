@@ -40,4 +40,11 @@ class AsistenciaController extends Controller
     
         return redirect('/home'); // Redirige a donde quieras después de guardar los datos
     }
+    public function detalles()
+    {
+        // Obtener los datos de inasistencias con los alumnos asociados
+        $inasistencias = Asistencia::with('alumno')->get();
+
+        return view('detalles', compact('inasistencias'));
+    }
 }    

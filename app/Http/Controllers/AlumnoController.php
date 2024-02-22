@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use PDF;
 use App\Models\Alumno;
+use App\Models\Inasistencia;
 use Illuminate\Http\Request;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
@@ -56,6 +57,11 @@ class AlumnoController extends Controller
         $alumnos = Alumno::all();
 
         return view('alumno.asistencia', compact('alumnos'));
+    }
+    public function detalles(){
+        $inasistencias = inasistencia::all();
+
+        return view('alumno.detalles', compact('inasistencias'));
     }
     public function guardar(){
         $alumnos = Alumno::all();
