@@ -14,7 +14,7 @@
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>N° lista</th>
                     <th>Nombre del Alumno</th>
                     <th>Grupo</th>
                     <th>Fecha de la inasistencia</th>

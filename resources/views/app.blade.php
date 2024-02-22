@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Proyecto Base</title>
+  <title>Pase De Lista</title>
   <link rel="icon" type="image/x-icon" href="{{ url('images/logohb.ico') }}">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -30,7 +30,7 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
               </li>
               <li class="nav-item d-none d-sm-inline-block">
-                <a href="{{url('/')}}" class="nav-link">Principal</a>
+                <a href="{{url('/home')}}" class="nav-link">Inicio</a>
               </li>
             </ul>
 
@@ -137,7 +137,7 @@
           <!-- Brand Logo -->
           <a href="{{asset('/home')}}" class="brand-link">
             <img src="{{ url('images/AdminLTELogo.png') }}" alt="baessh" class="brand-image img-circle elevation-3" style="opacity: .8">
-            <span class="brand-text font-weight-light">Proyecto base</span>
+            <span class="brand-text font-weight-light">Sistema Pase De Lista</span>
           </a>
 
           <!-- Sidebar -->
@@ -222,7 +222,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="nav-icon fas fa-tools"></i>
                       <p>
@@ -244,7 +244,7 @@
                         </a>
                       </li>
                     </ul>
-                </li>
+                </li>-->
               </ul>
             </nav>
             <!-- /.sidebar-menu -->
@@ -285,12 +285,12 @@
         <!-- /.control-sidebar -->
         <!-- Main Footer -->
         <footer class="main-footer">
-          <strong>Tu proyecto Web App &copy; 2023.</strong>
+          <strong>Sistema Pase De Lista &copy; 2024.</strong>
           derechos reservados.
           <div class="float-right d-none d-sm-inline-block">
-            <b>Version</b> 1.0
+            <b>Version</b> 1.1.2
           </div>
-          <a href="">Página web</a>
+          <a href="https://cetis107.edu.mx/portal/">Cetis 107</a>
         </footer>
       </div>
       <!-- ./wrapper -->

@@ -14,7 +14,7 @@
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>N° lista</th>
                     <th>Nombre</th>
                     <th>Sexo</th>
                     <th>Opciones</th>

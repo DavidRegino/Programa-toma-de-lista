@@ -4,62 +4,78 @@
     <h5 class="mb-2">Grupos Cetis 107</h5>
     <div class="row">
         <div class="col-md-3 col-sm-6 col-12">
+          <a href="{{asset('/alumno/asistencia')}}">
             <div class="info-box">
             <span class="info-box-icon bg-info"><i class="fa fa-users"></i></span>
 
             <div class="info-box-content">
-                <span class="info-box-text">2AVP</span>
+                <span class="info-box-text">6AVP</span>
             </div>
             <!-- /.info-box-content -->
             </div>
+          </a>
             <!-- /.info-box -->
         </div>
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-success"><i class="fa fa-users"></i></span>
-        
-            <div class="info-box-content">
-                <span class="info-box-text">2AVO</span>
-                
-            </div>
-            <!-- /.info-box-content -->
-        
-            <div class="info-box-buttons">
-                <button type="button" class="btn btn-primary btn-sm"><a href="{{asset('/alumno/asistencia')}}" class="text-light" value="1">Pase De Lista</a></button>
-            </div>
-        </div>
-        
-            <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-12">
+          <a href="{{asset('/alumno/asistencia')}}">
             <div class="info-box">
-            <span class="info-box-icon bg-warning"><i class="fas fa-cogs"></i></span>
-
-            <div class="info-box-content">
-                <span class="info-box-text">Mantenimientos</span>
-                <span class="info-box-number">5</span>
+              <span class="info-box-icon bg-success"><i class="fa fa-users"></i></span>
+          
+              <div class="info-box-content">
+                  <span class="info-box-text">6AVO</span>
+              </div>
+              <!-- /.info-box-content -->
             </div>
-            <!-- /.info-box-content -->
-            </div>
+          </a>
+        </div>
+        
+        
             <!-- /.info-box -->
+        
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-12">
+          <a href="{{asset('/alumno/asistencia')}}">
+            <div class="info-box">
+              <span class="info-box-icon bg-warning"><i class="fa fa-users text-light"></i></span>
+          
+              <div class="info-box-content">
+                  <span class="info-box-text">6AVE</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+          </a>
         </div>
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-12">
+          <a href="{{asset('/alumno/asistencia')}}">
             <div class="info-box">
-            <span class="info-box-icon bg-danger"><i class="fas fa-dollar-sign"></i></span>
+              <span class="info-box-icon bg-secondary"><i class="fa fa-users"></i></span>
+          
+              <div class="info-box-content">
+                  <span class="info-box-text">6AVC</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+          </a>
+        </div>
 
-            <div class="info-box-content">
-                <span class="info-box-text">Pagos</span>
-                <span class="info-box-number">2</span>
+        <div class="col-md-3 col-sm-6 col-12">
+          <a href="{{asset('/alumno/asistencia')}}">
+            <div class="info-box">
+              <span class="info-box-icon bg-danger"><i class="fa fa-users"></i></span>
+          
+              <div class="info-box-content">
+                  <span class="info-box-text">6AVCO</span>
+              </div>
+              <!-- /.info-box-content -->
             </div>
-            <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
+          </a>
         </div>
         <!-- /.col -->
     </div>
+  </div>
+    <!--
     <br>
     <h5 class="mb-2">Registros</h5>
     <div class="row">
@@ -89,5 +105,5 @@
                 </div>
               </div>
         </div>
-    </div>
+    </div> -->
 @endsection
